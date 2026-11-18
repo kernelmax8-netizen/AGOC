@@ -1,0 +1,217 @@
+.footer {
+  position: relative;
+  width: 100%;
+  margin-top: calc(-6 * var(--u));
+  height: calc(112 * var(--u));
+  min-height: 150px;
+  color: #fff;
+}
+.footer-wave {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.footer-inner {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: calc(984 * var(--u));
+  height: 100%;
+  transform: translateX(-50%);
+}
+
+/* positions are measured from the 1024px design, offset by the 20px side margin */
+.f-brand {
+  position: absolute;
+  left: calc(30 * var(--u));
+  top: calc(32 * var(--u));
+}
+.f-logo {
+  display: flex;
+  align-items: center;
+  gap: calc(6 * var(--u));
+}
+.f-logo img {
+  width: calc(26 * var(--u));
+  min-width: 30px;
+  filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.9));
+}
+.f-logo span {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+.f-logo b {
+  font-family: 'Marcellus', 'Inter', serif;
+  font-weight: 400;
+  font-size: max(15px, calc(var(--u) * 11));
+  letter-spacing: 1px;
+}
+.f-logo small {
+  margin-top: 3px;
+  font-size: max(7px, calc(var(--u) * 4.2));
+  letter-spacing: 1.2px;
+}
+.f-brand p {
+  margin-top: calc(10 * var(--u));
+  font-size: max(9.5px, calc(var(--u) * 5.8));
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.95);
+}
+.f-social {
+  display: flex;
+  gap: calc(8 * var(--u));
+  margin-top: calc(14 * var(--u));
+}
+.f-social a {
+  display: grid;
+  place-items: center;
+  width: calc(12 * var(--u));
+  height: calc(12 * var(--u));
+  min-width: 20px;
+  min-height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  color: #5a4de0;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.f-col {
+  position: absolute;
+  top: calc(26 * var(--u));
+}
+.f-col h6 {
+  margin: 0 0 calc(7 * var(--u));
+  font-size: max(9px, calc(var(--u) * 5.8));
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  color: #ffd98a;
+}
+.f-col a {
+  display: block;
+  margin-bottom: calc(5.5 * var(--u));
+  font-size: max(9.5px, calc(var(--u) * 5.6));
+  white-space: nowrap;
+  color: rgba(255, 255, 255, 0.95);
+}
+.f-company { left: calc(301 * var(--u)); }
+.f-biz { left: calc(395 * var(--u)); }
+.f-inv { left: calc(476 * var(--u)); }
+.f-careers { left: calc(571 * var(--u)); }
+.f-news { left: calc(690 * var(--u)); width: calc(125 * var(--u)); }
+.f-touch { left: calc(850 * var(--u)); }
+
+.f-news p {
+  font-size: max(9.5px, calc(var(--u) * 5.4));
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.95);
+}
+.f-news form {
+  display: flex;
+  margin-top: calc(9 * var(--u));
+  width: calc(125 * var(--u));
+  min-width: 140px;
+  height: calc(17 * var(--u));
+  min-height: 24px;
+}
+.f-news input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  padding: 0 calc(7 * var(--u));
+  border-radius: 3px 0 0 3px;
+  font-size: max(9px, calc(var(--u) * 5));
+  font-family: inherit;
+  outline: none;
+  color: #333;
+}
+.f-news button {
+  display: grid;
+  place-items: center;
+  width: calc(19 * var(--u));
+  min-width: 26px;
+  border: 0;
+  border-radius: 0 3px 3px 0;
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(90deg, #f0267a, #ff7a3d);
+}
+
+.f-touch div {
+  display: flex;
+  align-items: flex-start;
+  gap: calc(6 * var(--u));
+  margin-bottom: calc(8 * var(--u));
+  font-size: max(9.5px, calc(var(--u) * 5.6));
+  white-space: nowrap;
+}
+.f-touch span {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: calc(11 * var(--u));
+  height: calc(11 * var(--u));
+  min-width: 16px;
+  min-height: 16px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+}
+.f-touch em {
+  font-style: normal;
+  line-height: 1.5;
+}
+
+.f-copy,
+.f-legal {
+  position: absolute;
+  bottom: calc(5 * var(--u));
+  margin: 0;
+  font-size: max(9px, calc(var(--u) * 5));
+  color: rgba(255, 255, 255, 0.95);
+}
+.f-copy {
+  left: calc(402 * var(--u));
+}
+.f-legal {
+  left: calc(739 * var(--u));
+  display: flex;
+  align-items: center;
+  gap: calc(10 * var(--u));
+}
+.f-legal i {
+  width: 1px;
+  height: calc(7 * var(--u));
+  background: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 960px) {
+  .footer {
+    height: auto;
+    padding: 50px 20px 20px;
+    background: linear-gradient(90deg, #4a4be4, #c23fb4 45%, #ff7f50 80%, #2c7ef5);
+    margin-top: 20px;
+  }
+  .footer-wave {
+    display: none;
+  }
+  .footer-inner {
+    position: static;
+    width: auto;
+    transform: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .f-brand,
+  .f-col,
+  .f-copy,
+  .f-legal {
+    position: static;
+  }
+  .f-brand {
+    grid-column: 1 / -1;
+  }
+}
