@@ -204,7 +204,7 @@
     width: auto;
     transform: none;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 24px;
   }
   .f-brand,
@@ -213,7 +213,89 @@
   .f-legal {
     position: static;
   }
-  .f-brand {
+  .f-brand,
+  .f-copy,
+  .f-legal {
+    grid-column: 1 / -1;
+  }
+
+  /* readable type + touch-friendly sizes once the footer stacks */
+  .f-logo img {
+    width: 44px;
+  }
+  .f-logo b {
+    font-size: 26px;
+  }
+  .f-logo small {
+    font-size: 14px;
+  }
+  .f-brand p,
+  .f-news p,
+  .f-col a,
+  .f-touch div {
+    font-size: 14px;
+  }
+  .f-col h6 {
+    font-size: 12.5px;
+    margin-bottom: 10px;
+  }
+  .f-col a {
+    margin-bottom: 9px;
+    white-space: normal;
+  }
+  .f-col,
+  .f-news {
+    width: auto;
+  }
+  .f-social {
+    gap: 12px;
+    margin-top: 16px;
+  }
+  .f-social a {
+    width: 34px;
+    height: 34px;
+    font-size: 12px;
+  }
+  .f-news form {
+    width: 100%;
+    max-width: 320px;
+    height: 42px;
+    margin-top: 12px;
+  }
+  .f-news input {
+    font-size: 14px;
+    padding: 0 12px;
+  }
+  .f-news button {
+    width: 44px;
+  }
+  .f-touch div {
+    gap: 10px;
+    margin-bottom: 12px;
+    white-space: normal;
+  }
+  .f-touch span {
+    width: 22px;
+    height: 22px;
+  }
+  .f-copy,
+  .f-legal {
+    font-size: 12.5px;
+  }
+  .f-legal {
+    gap: 14px;
+  }
+  .f-legal i {
+    height: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 40px 16px 20px;
+  }
+  .f-news,
+  .f-touch {
     grid-column: 1 / -1;
   }
 }

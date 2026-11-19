@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import {
   ArrowRight,
   BarChart3,
@@ -93,6 +94,8 @@ const BUSINESSES = [
 ]
 
 function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false)
+
   return (
     <header className="nav">
       <a href="#home" className="brand">
@@ -103,9 +106,14 @@ function Navbar() {
         </span>
       </a>
 
-      <nav className="nav-links">
+      <nav id="primary-nav" className={`nav-links${menuOpen ? ' open' : ''}`}>
         {NAV.map((item, i) => (
-          <a key={item} href="#home" className={i === 0 ? 'active' : ''}>
+          <a
+            key={item}
+            href="#home"
+            className={i === 0 ? 'active' : ''}
+            onClick={() => setMenuOpen(false)}
+          >
             {item}
           </a>
         ))}
@@ -115,7 +123,13 @@ function Navbar() {
         <a href="#contact" className="btn-touch">
           Get in Touch <ArrowRight size={14} />
         </a>
-        <button className="burger" aria-label="Menu">
+        <button
+          className={`burger${menuOpen ? ' open' : ''}`}
+          aria-label="Menu"
+          aria-expanded={menuOpen}
+          aria-controls="primary-nav"
+          onClick={() => setMenuOpen((o) => !o)}
+        >
           <span />
           <span />
           <span />
