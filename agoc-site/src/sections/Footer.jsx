@@ -1,5 +1,5 @@
 import { ArrowRight, Mail, MapPin, Phone } from 'lucide-react'
-import logo from '../assets/img/logo.png'
+import logo from '../assets/img/eagle-logo.png'
 import './Footer.css'
 
 const COLS = [
@@ -43,8 +43,8 @@ export default function Footer() {
           <div className="f-logo">
             <img src={logo} alt="" />
             <span>
-              <b>AMERICAN</b>
-              <small>GROUP OF COMPANIES</small>
+              <b>American Group</b>
+              <small>Of Companies, Inc.</small>
             </span>
           </div>
           <p>

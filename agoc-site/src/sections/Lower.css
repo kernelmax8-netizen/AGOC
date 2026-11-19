@@ -36,11 +36,11 @@
 }
 .h2 {
   margin: calc(11 * var(--u)) 0 0;
-  font-size: max(20px, calc(var(--u) * 17));
-  line-height: 1.3;
-  font-weight: 500;
-  letter-spacing: -0.2px;
-  color: #232859;
+  font-size: max(22px, calc(var(--u) * 19));
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: 0;
+  color: var(--brand-navy);
 }
 .grad-pink {
   background: linear-gradient(90deg, #e8368f 0%, #b447d9 100%);

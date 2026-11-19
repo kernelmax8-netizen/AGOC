@@ -11,7 +11,7 @@ import {
   TrendingUp,
   Users,
 } from 'lucide-react'
-import logo from './assets/img/logo.png'
+import logo from './assets/img/eagle-logo.png'
 import heroImg from './assets/img/hero.jpg'
 import financeImg from './assets/img/finance.jpg'
 import carImg from './assets/img/car.jpg'
@@ -98,8 +98,8 @@ function Navbar() {
       <a href="#home" className="brand">
         <img src={logo} alt="" className="brand-logo" />
         <span className="brand-text">
-          <span className="brand-name">AMERICAN</span>
-          <span className="brand-sub">GROUP OF COMPANIES</span>
+          <span className="brand-name">American Group</span>
+          <span className="brand-sub">Of Companies, Inc.</span>
         </span>
       </a>
 

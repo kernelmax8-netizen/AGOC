@@ -1,3 +1,12 @@
+:root {
+  /* Brand palette (from the AGOC business card) */
+  --brand-navy: #2b3590;
+  --brand-red: #a4262f;
+
+  /* Blackletter display face for the wordmark and headings */
+  --font-display: 'Grenze Gotisch', 'Times New Roman', serif;
+}
+
 *,
 *::before,
 *::after {
@@ -29,6 +38,11 @@ h3,
 h4,
 p {
   margin: 0;
+}
+
+h1,
+h2 {
+  font-family: var(--font-display);
 }
 
 button {

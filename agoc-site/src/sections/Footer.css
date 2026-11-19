@@ -35,7 +35,8 @@
 .f-logo img {
   width: calc(26 * var(--u));
   min-width: 30px;
-  filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.9));
+  border-radius: 6px;
+  box-shadow: 0 0 0 1.5px rgba(255, 255, 255, 0.85);
 }
 .f-logo span {
   display: flex;
@@ -43,15 +44,16 @@
   line-height: 1;
 }
 .f-logo b {
-  font-family: 'Marcellus', 'Inter', serif;
-  font-weight: 400;
-  font-size: max(15px, calc(var(--u) * 11));
-  letter-spacing: 1px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: max(17px, calc(var(--u) * 13));
+  letter-spacing: 0.3px;
 }
 .f-logo small {
   margin-top: 3px;
-  font-size: max(7px, calc(var(--u) * 4.2));
-  letter-spacing: 1.2px;
+  font-family: var(--font-display);
+  font-size: max(10px, calc(var(--u) * 7));
+  letter-spacing: 0.4px;
 }
 .f-brand p {
   margin-top: calc(10 * var(--u));
